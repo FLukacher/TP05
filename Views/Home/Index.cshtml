@@ -1,9 +1,17 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-
 <div>
-    <h1>Bienvenidos al la Sala de Escape WEB</h1>
-    <h2>Pulsa <a href="">Acá</a> para empezar.</h2>
+<h2>Bienvenido al Escape Room WEB</h2>
+
+<form method="post" action="@Url.Action("IniciarJuego", "Home")" autocomplete="off">
+    <label for="nombreJugador">Ingresá tu nombre</label><br />
+    <input type="text" id="nombreJugador" name="nombreJugador" required />
+    <br/><br/>
+    <a href="@Url.Action("Celda", "Home")"><button type="submit">¡Empezar a jugar!</button></a>
+</form>
     
 </div>
+<footer>
+    &copy; @DateTime.Now.Year - Lukacher - Martinez - Perazzo
+</footer>

@@ -20,17 +20,16 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult IniciarJuego(string nombreJugador)
     {
-        if (string.IsNullOrWhiteSpace(nombreJugador))
-        {
-            ViewBag.Error = "Por favor ingresá un nombre válido.";
-            return View("Index");
-        }
-
-        // Guardar el nombre en TempData (podés usar Session si preferís)
-        TempData["JugadorNombre"] = nombreJugador;
-
-        // Redirigir a la primera sala del juego
-        return RedirectToAction("Sala", "Juego", new { id = 1 });
+        Jugador jugador = new Jugador(nombreJugador, 0);
+        ViewBag.JugadorNombre = nombreJugador;
+            Juego.Inicializar();
+        
+        return View("sala1");
     }
-}
+    public IActionResult Celda()
+    {
+        ViewBag.nombreSala = Juego.salas[0].nombre;
+        return View("sala2");
+    }
+    }
 

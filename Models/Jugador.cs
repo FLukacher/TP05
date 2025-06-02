@@ -6,8 +6,8 @@ public class Jugador
 {
     public string nombre { get; set; }
 
-    public DateTime tiempoFinal { get; set; }
-    public Jugador(string nombre, DateTime tiempoFinal)
+    public int tiempoFinal { get; set; }
+    public Jugador(string nombre, int tiempoFinal)
     {
         this.nombre = nombre;
         this.tiempoFinal = tiempoFinal;
