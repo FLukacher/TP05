@@ -1,11 +1,16 @@
-﻿<h1> @ViewBag.nombreSala</h1>
+﻿<h1> @ViewBag.nombreSala1</h1>
 <body class="celda">
     
 
 <section>
     <div>
         <h1>Bienvenido, @ViewBag.JugadorNombre</h1>
-        <h1>Estás en la sala: @ViewBag.nombreSala</h1>
+        <h1>Estás en la sala: @ViewBag.nombreSala1</h1>
+
+        <h1>@ViewBag.pista1</h1>
+        <form action='@Url.Action("Celda", "Home")' method="post">
+        <input autocomplete = "off" type="int" name="claveIngresada" maxlength="4" />
+        <button type="submit">Probar contraseña</button>
 
     </div>
 </section>

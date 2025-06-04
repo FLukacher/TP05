@@ -16,4 +16,8 @@ public class Sala
         this.pista = pista;
         this.claveCorrecta = claveCorrecta;
     }
+    public bool ValidarClave(int claveIngresada)
+    {
+        return this.claveCorrecta == claveIngresada;
+    }
 }
