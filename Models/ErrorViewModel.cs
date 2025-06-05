@@ -1,4 +1,6 @@
 namespace TP05.Models;
+using Newtonsoft.Json;
+
 
 public class ErrorViewModel
 {

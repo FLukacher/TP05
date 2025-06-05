@@ -1,12 +1,16 @@
 using System;
-
+using Newtonsoft.Json;
 namespace TP05.Models;
 
 public class Sala
 {
+    [JsonProperty]
     public int numero { get; set; }
+    [JsonProperty]
     public string nombre { get; set; }
+    [JsonProperty]
     public string pista { get; set; }
+    [JsonProperty]
     public int claveCorrecta { get; set; }
 
     public Sala(int numero, string nombre, string pista, int claveCorrecta)

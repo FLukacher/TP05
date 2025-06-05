@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using TP05.Models;
 
@@ -43,17 +44,27 @@ public class HomeController : Controller
     }
 
 
-    public IActionResult Pasillo(string[] clave)
+    public IActionResult Pasillo(string clave1, string clave2, string clave3, string clave4, string clave5)
     {
+
+        string[] claveRecibida = {clave1, clave2, clave3, clave4, clave5};
+        
         InicializarViews();
-        string[] claveEsperada = { "1", "0", "0", "1", "1" };
+        string[] claveEsperada = { "on", null, null, "on", "on" };
+
+        bool respuestaCorrecta = true;
         
         string claveIngresada = "";
-        foreach (string valor in clave)
-        {
-            claveIngresada += valor;
+
+        for(int i = 0; i < claveEsperada.Length; i++){
+            if(claveRecibida[i] != claveEsperada[i]){
+
+                respuestaCorrecta=false;
+            }
         }
-        if (clave.SequenceEqual(claveEsperada))
+ 
+
+        if (respuestaCorrecta)
         {
             return View("sala3");
             
@@ -62,7 +73,8 @@ public class HomeController : Controller
         {
             return View("sala2");
         }
-    }
+
+    }   
 
 
     public IActionResult Patio(int claveIngresada)
