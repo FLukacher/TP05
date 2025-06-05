@@ -25,6 +25,9 @@ footer {
   background-position: center;  
   background-repeat: no-repeat; 
 }
-h1{
+.celda div h1{
   color: #f8f9fa;
+}
+.celda div p{
+  color: red;
 }

@@ -9,47 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP05
 build_property.RootNamespace = TP05
-build_property.ProjectDir = z:\TP05\
+build_property.ProjectDir = C:\TP05\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = z:\TP05
+build_property.MSBuildProjectDirectory = C:\TP05
 build_property._RazorSourceGeneratorDebug = 
 
-[z:/TP05/Views/Home/Index.cshtml]
+[C:/TP05/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/Home/sala1.cshtml]
+[C:/TP05/Views/Home/sala1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzYWxhMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/Home/sala2.cshtml]
+[C:/TP05/Views/Home/sala2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzYWxhMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/Home/sala3.cshtml]
+[C:/TP05/Views/Home/sala3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzYWxhMy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/Home/sala4.cshtml]
+[C:/TP05/Views/Home/sala4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzYWxhNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/Shared/_Layout.cshtml]
+[C:/TP05/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/TP05/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/_ViewImports.cshtml]
+[C:/TP05/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP05/Views/_ViewStart.cshtml]
+[C:/TP05/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

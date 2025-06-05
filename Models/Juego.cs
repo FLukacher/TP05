@@ -15,6 +15,6 @@ public static class Juego
         //Sala 3
         salas.Add(new Sala(3, "Patio", "Usted ha de atravesar el patio del terror 'No mires atrás. Solo quien capture el presente exacto hallará la salida.'", DateTime.Now.Hour * 100 + DateTime.Now.Minute)); 
         //Sala 4
-        salas.Add(new Sala(4, "Salida","Lograste abrir la puerta del pasillo. Tu libertad se encuentra al otro lado de esta gran puerta. Frente a vos hay un teclado numérico y una inscripción tallada que dice: " +"'No mires atrás. Solo quien capture el presente exacto hallará la salida.'", DateTime.Now.Hour * 100 + DateTime.Now.Minute)); 
+        salas.Add(new Sala(4, "Salida","Lograste abrir la puerta del pasillo. Tu libertad se encuentra al otro lado de esta gran puerta. Frente a vos hay un teclado numérico y una inscripción tallada que dice: " +"'No mires atrás. Solo quien capture el presente exacto hallará la salida.'", 1)); 
     }
 }
