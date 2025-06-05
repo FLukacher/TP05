@@ -47,22 +47,37 @@ public class HomeController : Controller
     public IActionResult Pasillo(int claveIngresada)
     {
         InicializarViews();
+        int[] clave = { 0,0,0,0,0 };
+        clave[0]+clave[1]+clave[2]+clave[3]+clave[4] = claveIngresada;
+        if(claveIngresada; == 10011)
+        {
+            return View("sala3")
+        }
+        else return View("sala4");
+    }
+
+
+    public IActionResult Patio(int claveIngresada)
+    {
+        InicializarViews();
        
         ViewBag.intento = claveIngresada;    
-        if (Juego.salas[1].ValidarClave(claveIngresada))
+        if (Juego.salas[2].ValidarClaveHHmm(claveIngresada))
         {
-            return View("sala3");
+            return View("sala4");
         }
-        else return View("sala2");
+        else return View("sala3");
     }
-
-
-    public IActionResult Patio(){
-        return View("sala4");
-    }
-    public IActionResult Salida()
+    public IActionResult Salida(int claveIngresada)
     {
-        return View("sala5");
+        InicializarViews();
+       
+        ViewBag.intento = claveIngresada;    
+        if (Juego.salas[3].ValidarClave(claveIngresada))
+        {
+            return View("sala5");
+        }
+        else return View("sala4");
     }
 
 

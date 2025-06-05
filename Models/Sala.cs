@@ -20,4 +20,8 @@ public class Sala
     {
         return this.claveCorrecta == claveIngresada;
     }
+    public bool ValidarClaveHHmm(int claveIngresada)
+    {
+        return DateTime.Now.Hour * 100 + DateTime.Now.Minute == claveIngresada;
+    }
 }
