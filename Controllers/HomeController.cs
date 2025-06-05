@@ -34,7 +34,6 @@ public class HomeController : Controller
     public IActionResult Celda(int claveIngresada)
     {
         InicializarViews();
-       
         ViewBag.intento = claveIngresada;    
         if (Juego.salas[0].ValidarClave(claveIngresada))
         {
@@ -44,16 +43,25 @@ public class HomeController : Controller
     }
 
 
-    public IActionResult Pasillo(int claveIngresada)
+    public IActionResult Pasillo(string[] clave)
     {
         InicializarViews();
-        int[] clave = { 0,0,0,0,0 };
-        clave[0]+clave[1]+clave[2]+clave[3]+clave[4] = claveIngresada;
-        if(claveIngresada; == 10011)
+        string[] claveEsperada = { "1", "0", "0", "1", "1" };
+        
+        string claveIngresada = "";
+        foreach (string valor in clave)
         {
-            return View("sala3")
+            claveIngresada += valor;
         }
-        else return View("sala4");
+        if (clave.SequenceEqual(claveEsperada))
+        {
+            return View("sala3");
+            
+        }
+        else
+        {
+            return View("sala2");
+        }
     }
 
 
