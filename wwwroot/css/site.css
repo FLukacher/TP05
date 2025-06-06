@@ -41,5 +41,7 @@ footer {
   color: #f8f9fa;
 }
 .pasillo div p{
-  color: red;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(168, 29, 29);
 }

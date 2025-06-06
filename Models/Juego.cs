@@ -13,8 +13,8 @@ public static class Juego
     {
         //Sala 1
         salas.Add(new Sala(1, "Celda", 0180));
-        //Sala 2
-        salas.Add(new Sala(2, "Pasillo", 11100));
+        //Sala 2    
+        salas.Add(new Sala(2, "Pasillo", 10011));
         //Sala 3
         salas.Add(new Sala(3, "Patio", 0)); 
         //Sala 4
