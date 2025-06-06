@@ -31,3 +31,15 @@ footer {
 .celda div p{
   color: red;
 }
+.pasillo{
+  background-image: url("/img/Sala2Pasillo.jpg");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+.pasillo div h1{
+  color: #f8f9fa;
+}
+.pasillo div p{
+  color: red;
+}

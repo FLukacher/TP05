@@ -35,8 +35,7 @@ public class HomeController : Controller
     public IActionResult Celda(int claveIngresada)
     {
         InicializarViews();
-        ViewBag.intento = claveIngresada;    
-        if (Juego.salas[0].ValidarClave(claveIngresada))
+        if (Juego.salas[0].ValidarClaveCelda(claveIngresada))
         {
             return View("sala2");
         }
@@ -46,43 +45,20 @@ public class HomeController : Controller
 
     public IActionResult Pasillo(string clave1, string clave2, string clave3, string clave4, string clave5)
     {
-
-        string[] claveRecibida = {clave1, clave2, clave3, clave4, clave5};
-        
         InicializarViews();
-        string[] claveEsperada = { "on", null, null, "on", "on" };
-
-        bool respuestaCorrecta = true;
-        
-        string claveIngresada = "";
-
-        for(int i = 0; i < claveEsperada.Length; i++){
-            if(claveRecibida[i] != claveEsperada[i]){
-
-                respuestaCorrecta=false;
-            }
-        }
- 
-
-        if (respuestaCorrecta)
+        if (Juego.salas[1].ValidarPatronPasillo(clave1, clave2, clave3, clave4, clave5))
         {
             return View("sala3");
             
         }
-        else
-        {
-            return View("sala2");
-        }
-
+        else return View("sala2");
     }   
 
 
     public IActionResult Patio(int claveIngresada)
     {
-        InicializarViews();
-       
-        ViewBag.intento = claveIngresada;    
-        if (Juego.salas[2].ValidarClaveHHmm(claveIngresada))
+        InicializarViews();    
+        if (Juego.salas[2].ValidarClaveHoraPatio(claveIngresada))
         {
             return View("sala4");
         }
@@ -91,31 +67,19 @@ public class HomeController : Controller
     public IActionResult Salida(int claveIngresada)
     {
         InicializarViews();
-       
-        ViewBag.intento = claveIngresada;    
-        if (Juego.salas[3].ValidarClave(claveIngresada))
-        {
-            return View("sala5");
-        }
-        else return View("sala4");
+
+        ViewBag.intento = claveIngresada;
+        return View();  
+
     }
 
 
     void InicializarViews()
     {  
-        ViewBag.nombreSala1 = Juego.salas[0].nombre;
-        ViewBag.pista1 = Juego.salas[0].pista;
-       
+        ViewBag.nombreSala1 = Juego.salas[0].nombre;       
         ViewBag.nombreSala2 = Juego.salas[1].nombre;
-        ViewBag.pista2 = Juego.salas[1].pista;
-
-
         ViewBag.nombreSala3 = Juego.salas[2].nombre;
-        ViewBag.pista3 = Juego.salas[2].pista;
-
-
         ViewBag.nombreSala4 = Juego.salas[3].nombre;
-        ViewBag.pista4 = Juego.salas[3].pista;
     }
 }
    

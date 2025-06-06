@@ -4,7 +4,9 @@
     <div>
         <h1>@ViewBag.nombreSala1</h1>
 
-        <p>@ViewBag.pista1</p>
+        <p>Estás encerrado en una celda. Puedes observar una caja fuerte de 4 digitos 🔐 </p>
+        <p>En la pared hay una clave extraña escrita con sangre </p>
+        <p><strong>IV * III * III * V</strong></p>
         <form action='@Url.Action("Celda", "Home")' method="post">
         <input autocomplete = "off" type="int" name="claveIngresada" maxlength="5" />       
         <button type="submit">Probar contraseña</button>

@@ -9,23 +9,35 @@ public class Sala
     [JsonProperty]
     public string nombre { get; set; }
     [JsonProperty]
-    public string pista { get; set; }
-    [JsonProperty]
     public int claveCorrecta { get; set; }
-
-    public Sala(int numero, string nombre, string pista, int claveCorrecta)
+    public Sala(int numero, string nombre, int claveCorrecta)
     {
         this.numero = numero;
         this.nombre = nombre;
-        this.pista = pista;
         this.claveCorrecta = claveCorrecta;
     }
-    public bool ValidarClave(int claveIngresada)
+    public bool ValidarClaveCelda(int claveIngresada)
     {
         return this.claveCorrecta == claveIngresada;
     }
-    public bool ValidarClaveHHmm(int claveIngresada)
+    public bool ValidarPatronPasillo(string clave1, string clave2, string clave3, string clave4, string clave5)
+    {
+        bool respuestaCorrecta = true;
+        string[] claveRecibida = { clave1, clave2, clave3, clave4, clave5 };
+        string[] claveEsperada = { "on", "on", "on", null, null}; //11100
+
+        for (int i = 0; i < claveEsperada.Length; i++)
+        {
+            if (claveRecibida[i] != claveEsperada[i])
+            {
+                respuestaCorrecta = false;
+            }
+        }
+        return respuestaCorrecta;
+    }
+    public bool ValidarClaveHoraPatio(int claveIngresada)
     {
         return DateTime.Now.Hour * 100 + DateTime.Now.Minute == claveIngresada;
     }
+   
 }
