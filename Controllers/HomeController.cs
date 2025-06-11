@@ -26,6 +26,7 @@ public class HomeController : Controller
     public IActionResult IniciarJuego(string nombreJugador)
     {
         Jugador jugador = new Jugador(nombreJugador, 0);
+        HttpContext.Session.SetString("jugador",Objeto.ObjectToString(jugador));
         ViewBag.JugadorNombre = nombreJugador;
         Juego.Inicializar();
         InicializarViews();
@@ -60,20 +61,26 @@ public class HomeController : Controller
         InicializarViews();    
         if (Juego.salas[2].ValidarClaveHoraPatio(claveIngresada))
         {
+            claveIngresada = DateTime.Now.Hour * 100 + DateTime.Now.Minute; //para que no se actualice y vuelvas al patio
             return View("sala4");
         }
         else return View("sala3");
     }
-    public IActionResult Salida(int claveIngresada)
+    public IActionResult Salida()
     {
-        InicializarViews();
-
-        ViewBag.intento = claveIngresada;
-        return View();  
+        InicializarViews();   
+        return View("sala4oculta");  
 
     }
-
-
+    public IActionResult SalidaSalaOculta(int claveIngresada)
+    {
+        InicializarViews();   
+        if (Juego.salas[3].ValidarClaveCelda(claveIngresada))
+        { 
+            return View("ganaste");
+        }
+        else return View("sala4oculta");
+    }
     void InicializarViews()
     {  
         ViewBag.nombreSala1 = Juego.salas[0].nombre;       

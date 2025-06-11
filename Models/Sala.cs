@@ -24,7 +24,7 @@ public class Sala
     {
         bool respuestaCorrecta = true;
         string[] claveRecibida = { clave1, clave2, clave3, clave4, clave5 };
-        string[] claveEsperada = { "on",null, null, "on", "on"}; //10011
+        string[] claveEsperada = { "on", null, null, "on", "on"}; //10011
 
         for (int i = 0; i < claveEsperada.Length; i++)
         {

@@ -1,0 +1,17 @@
+ 
+<body class="salida">
+    
+<section>
+    <div>
+        <h1>@ViewBag.nombreSala4</h1>
+
+        <p>Lograste abrir la puerta del patio. Tu libertad se encuentra al otro lado de esta gran puerta. </p>
+       <form action='@Url.Action("SalidaSalaOculta", "Home")' method="post">
+        <input autocomplete = "off" type="int" name="claveIngresada" maxlength="5" />       
+        <button type="submit">Probar contraseña</button>
+        </form>
+
+    </div>
+</section>
+</body>
+ 
