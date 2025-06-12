@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\img\\Sala1Celda.jpg"
     },
     {
-      "Id": "C:\\TP05\\wwwroot\\img\\Sala2Pasillo.jpg",
-      "PackagePath": "staticwebassets\\img\\Sala2Pasillo.jpg"
+      "Id": "C:\\TP05\\wwwroot\\img\\Sala2pasillo.jpg",
+      "PackagePath": "staticwebassets\\img\\Sala2pasillo.jpg"
+    },
+    {
+      "Id": "C:\\TP05\\wwwroot\\img\\Sala3patio.jpg",
+      "PackagePath": "staticwebassets\\img\\Sala3patio.jpg"
+    },
+    {
+      "Id": "C:\\TP05\\wwwroot\\img\\Sala4Salida.jpg",
+      "PackagePath": "staticwebassets\\img\\Sala4Salida.jpg"
+    },
+    {
+      "Id": "C:\\TP05\\wwwroot\\img\\ganasteImg.jpg",
+      "PackagePath": "staticwebassets\\img\\ganasteImg.jpg"
     },
     {
       "Id": "C:\\TP05\\wwwroot\\js\\site.js",

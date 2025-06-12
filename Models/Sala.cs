@@ -9,17 +9,22 @@ public class Sala
     [JsonProperty]
     public string nombre { get; set; }
     [JsonProperty]
-    public int claveCorrecta { get; set; }
-    public Sala(int numero, string nombre, int claveCorrecta)
+    public string claveCorrecta { get; set; }
+    public Sala(int numero, string nombre, string claveCorrecta)
     {
         this.numero = numero;
         this.nombre = nombre;
         this.claveCorrecta = claveCorrecta;
     }
-    public bool ValidarClaveCelda(int claveIngresada)
+    public bool ValidarClaveCelda(string claveIngresada)
     {
         return this.claveCorrecta == claveIngresada;
     }
+    public bool ValidarClaveSalida(string claveIngresada)
+    {
+        return this.claveCorrecta.ToUpper() == claveIngresada.ToUpper();
+    }
+    
     public bool ValidarPatronPasillo(string clave1, string clave2, string clave3, string clave4, string clave5)
     {
         bool respuestaCorrecta = true;
@@ -35,9 +40,9 @@ public class Sala
         }
         return respuestaCorrecta;
     }
-    public bool ValidarClaveHoraPatio(int claveIngresada)
+    public bool ValidarClaveHoraPatio(string claveIngresada)
     {
-        return DateTime.Now.Hour * 100 + DateTime.Now.Minute == claveIngresada;
+        return (DateTime.Now.Hour * 100 + DateTime.Now.Minute).ToString() == claveIngresada;
     }
    
 }

@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\TP05\\TP05.csproj",
         "projectName": "TP05",
         "projectPath": "C:\\TP05\\TP05.csproj",
-        "packagesPath": "C:\\Users\\49121068\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\49091985\\.nuget\\packages\\",
         "outputPath": "C:\\TP05\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\49121068\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\49091985\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

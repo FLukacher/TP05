@@ -45,3 +45,29 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(168, 29, 29);
 }
+
+.patio {
+  background-image: url("/img/Sala3patio.jpg");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+}
+.salida{
+  background-image: url("/img/Sala4Salida.jpg");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+}
+.salida div p{
+  color: #ff0000; 
+}
+.salida div h1{
+  color: #f8f9fa;
+}
+
+.ganaste {
+  background-image: url("/img/ganasteImg.jpg");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+}

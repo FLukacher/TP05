@@ -6,9 +6,12 @@
         <h1>@ViewBag.nombreSala4</h1>
 
         <p>Lograste abrir la puerta del patio. Tu libertad se encuentra al otro lado de esta gran puerta. </p>
-       <form action='@Url.Action("SalidaSalaOculta", "Home")' method="post">
-        <input autocomplete = "off" type="int" name="claveIngresada" maxlength="5" />       
-        <button type="submit">Probar contraseña</button>
+        <p>Tengo cinco letras.</p>
+        <p>Sin mí, estás perdido.</p>
+        <p><strong>¿Qué soy?</strong></p>
+        <form action='@Url.Action("SalidaSalaOculta", "Home")' method="post">
+            <input autocomplete = "off" type="text" name="claveIngresada" maxlength="5" />       
+            <button type="submit">Probar palabra</button>
         </form>
 
     </div>
