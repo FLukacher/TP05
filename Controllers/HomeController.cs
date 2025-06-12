@@ -25,73 +25,89 @@ public class HomeController : Controller
     [HttpPost]
 
     public IActionResult IniciarJuego(string nombreJugador)
-    {
-        Jugador jugador = new Jugador(nombreJugador);
-        HttpContext.Session.SetString("jugador",Objeto.ObjectToString(jugador));
-        ViewBag.JugadorNombre = nombreJugador;
-        Sala salaActual = new Sala(1, "Celda", "0180" );
-        HttpContext.Session.SetString("Sala",Objeto.ObjectToString(salaActual));
-        ViewBag.nombreSala1 = salaActual.nombre;       
+    {  
+    HttpContext.Session.SetString("jugador", nombreJugador);
+    HttpContext.Session.SetString("salaActual", "Celda");
+    string salaActual = HttpContext.Session.GetString("salaActual");
+    ViewBag.nombreSala1 = salaActual;
+    ViewBag.JugadorNombre = nombreJugador;
+   
+    Juego.Inicializar();
+    
 
-        InicializarViews();
-       
+    return View("sala1");
+    }
+   public IActionResult Celda(string claveIngresada)
+{
+    string salaActual = HttpContext.Session.GetString("salaActual");
+
+    if (Juego.salas[0].ValidarClaveCelda(claveIngresada))
+    {
+        HttpContext.Session.SetString("salaActual", "sala2");
+        return View("sala2");
+    }
+    else
+    {
+        HttpContext.Session.SetString("salaActual", "sala1");
         return View("sala1");
     }
-    public IActionResult Celda(string claveIngresada)
-    {
-        InicializarViews();
-        if (Juego.salas[0].ValidarClaveCelda(claveIngresada))
-        {
-            return View("sala2");
-        }
-        else return View("sala1");
-    }
+}
 
 
     public IActionResult Pasillo(string clave1, string clave2, string clave3, string clave4, string clave5)
+{
+    string salaActual = HttpContext.Session.GetString("salaActual");
+
+    if (Juego.salas[1].ValidarPatronPasillo(clave1, clave2, clave3, clave4, clave5))
     {
-        InicializarViews();
-        if (Juego.salas[1].ValidarPatronPasillo(clave1, clave2, clave3, clave4, clave5))
-        {
-            return View("sala3");
-            
-        }
-        else return View("sala2");
-    }   
+        HttpContext.Session.SetString("salaActual", "sala3");
+        return View("sala3");
+    }
+    else
+    {
+        HttpContext.Session.SetString("salaActual", "sala2");
+        return View("sala2");
+    }
+}
 
 
     public IActionResult Patio(string claveIngresada)
     {
-        InicializarViews();    
-        if (Juego.salas[2].ValidarClaveHoraPatio(claveIngresada))
-        {
-            claveIngresada = (DateTime.Now.Hour * 100 + DateTime.Now.Minute).ToString(); //para que no se actualice y vuelvas al patio
-            return View("sala4");
-        }
-        else return View("sala3");
+        string salaActual = HttpContext.Session.GetString("salaActual");
+
+    if (Juego.salas[2].ValidarClaveHoraPatio(claveIngresada))
+    {
+        HttpContext.Session.SetString("salaActual", "Salida"); // Cambia a la siguiente sala
+        return View("sala4");
+    }
+    else
+    {
+        HttpContext.Session.SetString("salaActual", "Patio");
+        return View("sala3");
+    }
     }
     public IActionResult Salida()
-    {
-        InicializarViews();   
-        return View("sala4oculta");  
+    {           
+        string salaActual = HttpContext.Session.GetString("salaActual");
+        return View("sala4oculta");
 
     }
     public IActionResult SalidaSalaOculta(string claveIngresada)
     {
-        InicializarViews();   
-        if (Juego.salas[3].ValidarClaveSalida(claveIngresada))
-        { 
-            return View("ganaste");
-        }
-        else return View("sala4oculta");
+         string salaActual = HttpContext.Session.GetString("salaActual");
+
+    if (Juego.salas[3].ValidarClaveSalida(claveIngresada))
+    { 
+        HttpContext.Session.SetString("estadoJuego", "ganaste");
+        return View("ganaste");
     }
-    void InicializarViews()
-    {  
-        ViewBag.nombreSala1 = Juego.salas[0].nombre;       
-        ViewBag.nombreSala2 = Juego.salas[1].nombre;
-        ViewBag.nombreSala3 = Juego.salas[2].nombre;
-        ViewBag.nombreSala4 = Juego.salas[3].nombre;
+    else 
+    {
+        HttpContext.Session.SetString("salaActual", "sala4oculta");
+        return View("sala4oculta");
     }
+    }
+   
 }
    
 
