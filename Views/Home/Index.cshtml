@@ -1,6 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
+<body class="index">
+<section>
 <div>
 <h2>Bienvenido al Escape Room WEB</h2>
 
@@ -9,10 +11,11 @@
     <input type="text" id="nombreJugador" name="nombreJugador" required />
     <br/><br/>
     <a href="@Url.Action("Celda", "Home", "new { claveIngresada = ViewBag.intento }" )"><button type="submit">¡Empezar a jugar!</button></a>
-    
 </form>
-    
+  
 </div>
+</section>
+</body>
 <footer>
     &copy; @DateTime.Now.Year - Lukacher - Martinez - Perazzo
 </footer>

@@ -2,6 +2,13 @@ html {
   font-size: 14px;
   min-height: 100%;
 }
+.index{
+  background-image: url("/img/PrisionEntrada.jpg");
+  background-size: cover;        
+  background-repeat: no-repeat; 
+  height: 30%;
+}
+
 
 @media (min-width: 768px) {
   html {
@@ -13,12 +20,54 @@ body {
   margin: 10px;
   padding: 10px;
 }
-
-
+.index section div h2{
+  text-align: center;
+  color:#fd2306 ;
+  margin-top: 4%;
+}
+.index section form label{
+  margin-left: 42%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #f8f9fa;
+}
+.index section div form input
+{
+  margin-left: 42%;
+  width: 15%;
+}
+.index section div form button
+{
+ background-color: #fd2306;
+ box-shadow: 3px 3px 3px rgb(7, 7, 7);
+ border-radius: 5px;
+ margin-left: 35%;
+ margin-top: 5%;
+ width: 30%;
+ height: 45px;
+}
+.index section div form button:hover
+{
+ background-color: #7a0707;
+ box-shadow: none;
+}
+.celda section div form button
+{
+ background-color: #fd2306;
+ box-shadow: 3px 3px 3px rgb(7, 7, 7);
+ border-radius: 5px;
+}
+.celda section div form button:hover 
+{
+ background-color: #7a0707;
+ box-shadow: none;
+}
 footer {
   background-color: #f8f9fa;
   clear: both;
+  margin-top: 35%;
+  width: 15%;
 }
+
 .celda{
   background-image: url("/img/Sala1celda.jpg");
   background-size: cover;       
