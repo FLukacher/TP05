@@ -1201,11 +1201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\TP01_Martinez_Lukacher-20250619T010800Z-1-001\\TP05\\TP05.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\TP05\\TP05.csproj",
       "projectName": "TP05",
-      "projectPath": "C:\\Users\\Usuario\\Downloads\\TP01_Martinez_Lukacher-20250619T010800Z-1-001\\TP05\\TP05.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Downloads\\TP05\\TP05.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Downloads\\TP01_Martinez_Lukacher-20250619T010800Z-1-001\\TP05\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Downloads\\TP05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
