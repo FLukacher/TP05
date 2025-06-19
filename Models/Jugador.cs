@@ -18,4 +18,5 @@ public class Jugador
         this.tiempoFinal = tiempoFinal;
 
     }
+
 }
