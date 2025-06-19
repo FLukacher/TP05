@@ -26,16 +26,16 @@ public class HomeController : Controller
 
     public IActionResult IniciarJuego(string nombreJugador)
     {  
-    HttpContext.Session.SetString("jugador", nombreJugador);
-    HttpContext.Session.SetString("salaActual", "Celda");
-    string salaActual = HttpContext.Session.GetString("salaActual");
-    ViewBag.nombreSala1 = salaActual;
-    ViewBag.JugadorNombre = nombreJugador;
-   
-    Juego.Inicializar();
-    
+        HttpContext.Session.SetString("jugador", nombreJugador);
+        HttpContext.Session.SetString("salaActual", "Celda");
+        string salaActual = HttpContext.Session.GetString("salaActual");
+        ViewBag.nombreSala1 = salaActual;
+        ViewBag.JugadorNombre = nombreJugador;
+        HttpContext.Session.SetString("inicio", DateTime.Now.ToString());
+        Juego.Inicializar();
+        
 
-    return View("sala1");
+        return View("sala1");
     }
    public IActionResult Celda(string claveIngresada)
 {
@@ -94,18 +94,23 @@ public class HomeController : Controller
     }
     public IActionResult SalidaSalaOculta(string claveIngresada)
     {
-         string salaActual = HttpContext.Session.GetString("salaActual");
+        if (Juego.salas[3].ValidarClaveSalida(claveIngresada))
+        {
+            string inicioStr = HttpContext.Session.GetString("inicio");
+            DateTime inicio = DateTime.Parse(inicioStr);
+            DateTime fin = DateTime.Now;
 
-    if (Juego.salas[3].ValidarClaveSalida(claveIngresada))
-    { 
-        HttpContext.Session.SetString("estadoJuego", "ganaste");
-        return View("ganaste");
-    }
-    else 
-    {
-        HttpContext.Session.SetString("salaActual", "sala4oculta");
-        return View("sala4oculta");
-    }
+            TimeSpan duracion = fin - inicio;
+            ViewBag.TiempoFinal = duracion.ToString(@"mm\:ss");
+
+            HttpContext.Session.SetString("estadoJuego", "ganaste");
+            return View("ganaste");
+        }
+        else
+        {
+            HttpContext.Session.SetString("salaActual", "sala4oculta");
+            return View("sala4oculta");
+        }
     }
 
    

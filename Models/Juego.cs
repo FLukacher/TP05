@@ -15,8 +15,9 @@ public static class Juego
         //Sala 2    
         salas.Add(new Sala(2, "Pasillo", "10011"));
         //Sala 3
-        salas.Add(new Sala(3, "Patio", "0")); 
+        salas.Add(new Sala(3, "Patio", "0"));
         //Sala 4
-        salas.Add(new Sala(4, "Salida", "mapa")); 
+        salas.Add(new Sala(4, "Salida", "plan"));
     }
+    
 }

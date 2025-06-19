@@ -44,10 +44,12 @@ body {
  margin-top: 5%;
  width: 30%;
  height: 45px;
+ color: aliceblue;
  cursor: pointer;
 }
 .index section div form button:hover
 {
+  color: black;
  background-color: #7a0707;
  box-shadow: none;
 }
@@ -71,6 +73,7 @@ body {
   font-size: 30px;
   width: 30%;
   margin-left: 20%;
+  box-shadow: 4px 4px 4px black;
 }
 .celda section div form button
 {
@@ -208,8 +211,14 @@ background-color: #fd2306;
  margin-top: 10px;
   margin-left: 0;  
 }
-.salidaOculta, .salida{
+ .salida{
   background-image: url("/img/Sala4Salida.jpg");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+}
+.salidaOculta{
+  background-image: url("/img/salaoculta.jpg");
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat;
