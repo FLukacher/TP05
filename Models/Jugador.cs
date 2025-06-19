@@ -4,19 +4,17 @@ using Newtonsoft.Json;
 
 namespace TP05.Models;
 
-public class Jugador
+public static class Jugador
 {
     [JsonProperty]
-    public string nombre { get; set; }
+    public static string nombre { get; set; }
     [JsonProperty]
-    public DateTime tiempoFinal { get; set; }
+    public static DateTime tiempoFinal { get; set; }
 
     public static List<Sala> salas = new List<Sala>();
-    public Jugador(string nombre, DateTime tiempoFinal)
+    public static TimeSpan calcularTiempoFinal(DateTime tiempo1, DateTime tiempo2)
     {
-        this.nombre = nombre;
-        this.tiempoFinal = tiempoFinal;
-
+        return tiempo1 - tiempo2;
     }
 
 }

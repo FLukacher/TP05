@@ -96,11 +96,9 @@ public class HomeController : Controller
     {
         if (Juego.salas[3].ValidarClaveSalida(claveIngresada))
         {
-            DateTime inicio = DateTime.Parse(HttpContext.Session.GetString("inicio"));
-            DateTime fin = DateTime.Now;
-
-            TimeSpan duracion = fin - inicio;
-            ViewBag.TiempoFinal = duracion.ToString(@"mm\:ss");
+            
+            TimeSpan tiempo = Jugador.calcularTiempoFinal(DateTime.Parse(HttpContext.Session.GetString("inicio")), DateTime.Now);
+            ViewBag.TiempoFinal = tiempo.ToString(@"mm\:ss");
 
             HttpContext.Session.SetString("estadoJuego", "ganaste");
             return View("ganaste");
