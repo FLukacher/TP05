@@ -70,6 +70,7 @@ body {
 .celda section div form input{
   font-size: 30px;
   width: 30%;
+  margin-left: 20%;
 }
 .celda section div form button
 {
@@ -80,7 +81,8 @@ body {
  border-radius: 5px;
  cursor: pointer;
  color: #f8f9fa;
- margin-left: -42%;
+ margin-top: 10px;
+  margin-left: 0;  
 }
 .celda section div form button:hover 
 {
@@ -126,7 +128,9 @@ footer {
 .pasillo div p{
   background-color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(168, 29, 29);
+  color: #fd2306;
+  font-size: x-large;
+  text-align: center;
 }
 .pasillo section div form input{
  width: 100px;
@@ -163,7 +167,7 @@ background-color: #fd2306;
 }
 .pasillo section div form button:hover 
 {
-color: black;
+  color: black;
  background-color: #7a0707;
  box-shadow: none;
 }
@@ -173,11 +177,72 @@ color: black;
   background-position: center;  
   background-repeat: no-repeat;
 }
+.patio h1{
+  font-size: 70px;
+  text-align: center;
+  color: #ff0000; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.patio section div p{
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fd2306;
+  font-size: x-large;
+  text-align: center;
+}
+.patio section div input{
+  font-size: 30px;
+  width: 30%;
+  margin-left: 28%;
+  box-shadow: 4px 4px 4px black;
+}
+.patio section div button{
+  width: 10%;
+  height: 35px;
+ background-color: #fd2306;
+ box-shadow: 3px 3px 3px rgb(7, 7, 7);
+ border-radius: 5px;
+ cursor: pointer;
+ color: #f8f9fa;
+ margin-top: 10px;
+  margin-left: 0;  
+}
 .salidaOculta, .salida{
   background-image: url("/img/Sala4Salida.jpg");
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat;
+}
+.salida h1, .salidaOculta h1{
+  font-size: 70px;
+  text-align: center;
+  color: #ff0000; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.salida section div p, .salidaOculta section div p{
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fd2306;
+  font-size: x-large;
+  text-align: center;
+}
+.salidaOculta section div button{
+  width: 10%;
+  height: 35px;
+ background-color: #fd2306;
+ box-shadow: 3px 3px 3px rgb(7, 7, 7);
+ border-radius: 5px;
+ cursor: pointer;
+ color: #f8f9fa;
+ margin-top: 10px;
+  margin-left: 0;  
+}
+.salidaOculta section div input{
+  font-size: 30px;
+  width: 30%;
+  margin-left: 28%;
+  box-shadow: 4px 4px 4px black;
 }
 .salida div p{
   color: #ff0000; 
@@ -195,4 +260,16 @@ color: black;
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat;
+}
+.ganaste h1{
+  font-size: 70px;
+  text-align: center;
+  color: #27ca06; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ganaste section div p{
+  text-align: center;
+  font-size: 50px;
+  color: #1a8305;
+  background-color: rgba(0, 0, 0, 0.226);
 }
