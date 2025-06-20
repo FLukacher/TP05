@@ -29,12 +29,13 @@ public class HomeController : Controller
         HttpContext.Session.SetString("jugador", nombreJugador);
         HttpContext.Session.SetString("salaActual", "Celda");
         string salaActual = HttpContext.Session.GetString("salaActual");
+
         ViewBag.nombreSala1 = salaActual;
         ViewBag.JugadorNombre = nombreJugador;
+
         HttpContext.Session.SetString("inicio", DateTime.Now.ToString());
         Juego.Inicializar();
         
-
         return View("sala1");
     }
    public IActionResult Celda(string claveIngresada)
@@ -96,10 +97,8 @@ public class HomeController : Controller
     {
         if (Juego.salas[3].ValidarClaveSalida(claveIngresada))
         {
-            
-            TimeSpan tiempo = Jugador.calcularTiempoFinal(DateTime.Parse(HttpContext.Session.GetString("inicio")), DateTime.Now);
-            ViewBag.TiempoFinal = tiempo.ToString(@"mm\:ss");
-
+            DateTime tiempoInicial = DateTime.Parse(HttpContext.Session.GetString("inicio")); 
+            ViewBag.TiempoFinal = Jugador.calcularTiempoFinal(tiempoInicial, DateTime.Now).ToString(@"mm\:ss");
             HttpContext.Session.SetString("estadoJuego", "ganaste");
             return View("ganaste");
         }

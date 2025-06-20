@@ -10,6 +10,8 @@ public static class Jugador
     public static string nombre { get; set; }
     [JsonProperty]
     public static DateTime tiempoFinal { get; set; }
+    [JsonProperty]
+
 
     public static List<Sala> salas = new List<Sala>();
     public static TimeSpan calcularTiempoFinal(DateTime tiempo1, DateTime tiempo2)

@@ -20,9 +20,10 @@ body {
   margin: 10px;
   padding: 10px;
 }
-.index section div h2{
+.index h2{
   text-align: center;
   color:#fd2306 ;
+  background-color: black;
   margin-top: 4%;
 }
 .index section form label{
@@ -34,6 +35,7 @@ body {
 {
   margin-left: 42%;
   width: 15%;
+  box-shadow: 3px 3px 3px rgb(7, 7, 7);
 }
 .index section div form button
 {
