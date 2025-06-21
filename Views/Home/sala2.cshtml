@@ -1,9 +1,9 @@
 
-<body class="pasillo">   
+<body class="pasillo">
+    <h1>@ViewBag.Sala</h1>   
 <section>
-    <div>
-        <h1>PASILLO</h1>
-        <p><strong>Lograste salir, pero el pasillo está lleno de cámaras. Puedes observar junto a la puerta un panel con 5 luces, las cuales pueden prenderse y apargarse de manera independiente.</strong></p>
+    <div> 
+        <p><strong>Bueno @ViewBag.JugadorNombre, lograste salir, pero el pasillo está lleno de cámaras. Puedes observar junto a la puerta un panel con 5 luces, las cuales pueden prenderse y apargarse de manera independiente.</strong></p>
         <p><strong>Sobre este, se encuntra un papel que dice: 'XIX?'</strong></p>
         <form action='@Url.Action("Pasillo", "Home")' method="post">
             <input type="checkbox" name="clave1"/>  

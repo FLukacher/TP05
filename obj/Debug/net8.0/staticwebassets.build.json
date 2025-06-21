@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "piMH4yvnJztt+F12gCVAvZIJuwYoMfwvQwDauYEw4Sw=",
+  "Hash": "b+JA0hoHTiu+e+gMTWuyltr87j5PqMB29crrSG0nvlA=",
   "Source": "TP05",
   "BasePath": "_content/TP05",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fnjdcw94n0",
-      "Integrity": "u0AZU3LFD0FmHLqtOzaP0XTSjfT5eKBL82a/F1Gb67o=",
+      "Fingerprint": "7c206h3796",
+      "Integrity": "KVrPBWelQSztM35EnYMzBuqGEE7lkDF1GIR9h2JUQ3E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -481,6 +481,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/site.7c206h3796.css",
+      "AssetFile": "C:\\Users\\Usuario\\Downloads\\TP05\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6404"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KVrPBWelQSztM35EnYMzBuqGEE7lkDF1GIR9h2JUQ3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Jun 2025 17:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7c206h3796"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KVrPBWelQSztM35EnYMzBuqGEE7lkDF1GIR9h2JUQ3E="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\Usuario\\Downloads\\TP05\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -491,7 +536,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6068"
+          "Value": "6404"
         },
         {
           "Name": "Content-Type",
@@ -499,11 +544,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u0AZU3LFD0FmHLqtOzaP0XTSjfT5eKBL82a/F1Gb67o=\""
+          "Value": "\"KVrPBWelQSztM35EnYMzBuqGEE7lkDF1GIR9h2JUQ3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Jun 2025 13:30:46 GMT"
+          "Value": "Sat, 21 Jun 2025 17:33:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -513,52 +558,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u0AZU3LFD0FmHLqtOzaP0XTSjfT5eKBL82a/F1Gb67o="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.fnjdcw94n0.css",
-      "AssetFile": "C:\\Users\\Usuario\\Downloads\\TP05\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6068"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u0AZU3LFD0FmHLqtOzaP0XTSjfT5eKBL82a/F1Gb67o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Jun 2025 13:30:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fnjdcw94n0"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u0AZU3LFD0FmHLqtOzaP0XTSjfT5eKBL82a/F1Gb67o="
+          "Value": "sha256-KVrPBWelQSztM35EnYMzBuqGEE7lkDF1GIR9h2JUQ3E="
         }
       ]
     },

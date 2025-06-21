@@ -121,7 +121,7 @@ footer {
   background-position: center;  
   background-repeat: no-repeat; 
 }
-.pasillo div h1{
+.pasillo h1{
   color: #f8f9fa;
   margin-bottom: 6%;
   text-align: center;
@@ -130,7 +130,7 @@ footer {
   font-family:Georgia, 'Times New Roman', Times, serif;
   margin-right: 5%;
 }
-.pasillo div p{
+.pasillo section div p{
   background-color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fd2306;
@@ -213,6 +213,11 @@ background-color: #fd2306;
  margin-top: 10px;
   margin-left: 0;  
 }
+.patio section div  button:hover{
+  color: black;
+ background-color: #7a0707;
+ box-shadow: none;
+}
  .salida{
   background-image: url("/img/Sala4Salida.jpg");
   background-size: cover;       
@@ -278,9 +283,20 @@ background-color: #fd2306;
   color: #27ca06; 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.ganaste section div p{
-  text-align: center;
+.ganaste section div h2{
+   text-align: center;
   font-size: 50px;
-  color: #1a8305;
+  color: #27ca06;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+.ganaste section div p{
+  font-size: 35px;
+  color: #91ab10;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+.ganaste section div ul li{
+
+  font-size: 30px;
+  color: #78ad06;
   background-color: rgba(0, 0, 0, 0.226);
 }

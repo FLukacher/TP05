@@ -4,16 +4,11 @@ namespace TP05.Models;
 
 public class Sala
 {
-    [JsonProperty]
-    public int numero { get; set; }
-    [JsonProperty]
-    public string nombre { get; set; }
+
     [JsonProperty]
     public string claveCorrecta { get; set; }
-    public Sala(int numero, string nombre, string claveCorrecta)
+    public Sala(string claveCorrecta)
     {
-        this.numero = numero;
-        this.nombre = nombre;
         this.claveCorrecta = claveCorrecta;
     }
     public bool ValidarClaveCelda(string claveIngresada)

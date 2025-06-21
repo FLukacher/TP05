@@ -11,13 +11,13 @@ public static class Juego
     public static void Inicializar()
     {
         //Sala 1
-        salas.Add(new Sala(1, "Celda", "0180"));
+        salas.Add(new Sala("0180"));
         //Sala 2    
-        salas.Add(new Sala(2, "Pasillo", "10011"));
+        salas.Add(new Sala("10011"));
         //Sala 3
-        salas.Add(new Sala(3, "Patio", "0"));
+        salas.Add(new Sala("0")); 
         //Sala 4
-        salas.Add(new Sala(4, "Salida", "plan"));
+        salas.Add(new Sala("plan"));
     }
     
 }

@@ -1,12 +1,12 @@
 
 <body class="salida">
-<h1>SALIDA</h1>
+<h1>@ViewBag.Sala</h1>
     
 <section>
     <div>
         
 
-        <p><strong>Lograste abrir la puerta del patio. Tu libertad se encuentra al otro lado de esta gran puerta.</strong> </p>
+        <p><strong>@ViewBag.JugadorNombre, lograste abrir la puerta del patio. Tu libertad se encuentra al otro lado de esta gran puerta.</strong> </p>
          <p><strong>El lugar esconde un interruptor, el cual abre una puerta oculta</strong></p>
 
         <form action='@Url.Action("Salida", "Home")' method="post">     
