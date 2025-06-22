@@ -20,6 +20,10 @@ body {
   margin: 10px;
   padding: 10px;
 }
+p{
+  font-family:'Times New Roman', Times, serif;
+  background-color: rgba(0, 0, 0, 0.733); 
+}
 .index h2{
   text-align: center;
   color:#fd2306 ;
@@ -52,8 +56,8 @@ body {
 .index section div form button:hover
 {
   color: black;
- background-color: #7a0707;
- box-shadow: none;
+  background-color: #7a0707;
+  box-shadow: none;
 }
 .celda h1{
   text-align: center;
@@ -69,7 +73,7 @@ body {
   font-size: 30px;
   text-align: center;
   margin-left: -15%;
-  background-color: black;
+
 }
 .celda section div form input{
   font-size: 30px;
@@ -131,8 +135,6 @@ footer {
   margin-right: 5%;
 }
 .pasillo section div p{
-  background-color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fd2306;
   font-size: x-large;
   text-align: center;
@@ -154,25 +156,26 @@ footer {
   margin-left: 12%;
   margin-bottom: 100px;
   cursor: pointer;
+
  
  }
 .pasillo section div form button{
-margin-top: 20px;
-clear: left;
-width: 30%;
-margin-left: 34%;
-height: 60px;
-border-radius: 20px;
-background-color: #fd2306;
- box-shadow: 3px 3px 3px rgb(7, 7, 7);
- font-size: xx-large;
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- color: #f8f9fa;
- cursor: pointer;
+  margin-top: 20px;
+  clear: left;
+  width: 30%;
+  margin-left: 34%;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #fd2306;
+  box-shadow: 3px 3px 3px rgb(7, 7, 7);
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #f8f9fa;
+  cursor: pointer;
 }
 .pasillo section div form button:hover 
 {
-  color: black;
+color: black;
  background-color: #7a0707;
  box-shadow: none;
 }
@@ -190,8 +193,6 @@ background-color: #fd2306;
   
 }
 .patio section div p{
-  background-color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fd2306;
   font-size: x-large;
   text-align: center;
@@ -205,20 +206,20 @@ background-color: #fd2306;
 .patio section div button{
   width: 10%;
   height: 35px;
- background-color: #fd2306;
- box-shadow: 3px 3px 3px rgb(7, 7, 7);
- border-radius: 5px;
- cursor: pointer;
- color: #f8f9fa;
- margin-top: 10px;
+  background-color: #fd2306;
+  box-shadow: 3px 3px 3px rgb(7, 7, 7);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f8f9fa;
+  margin-top: 10px;
   margin-left: 0;  
 }
 .patio section div  button:hover{
   color: black;
- background-color: #7a0707;
- box-shadow: none;
+  background-color: #7a0707;
+  box-shadow: none;
 }
- .salida{
+.salida{
   background-image: url("/img/Sala4Salida.jpg");
   background-size: cover;       
   background-position: center;  
@@ -237,8 +238,6 @@ background-color: #fd2306;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .salida section div p, .salidaOculta section div p{
-  background-color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fd2306;
   font-size: x-large;
   text-align: center;
@@ -246,12 +245,12 @@ background-color: #fd2306;
 .salidaOculta section div button{
   width: 10%;
   height: 35px;
- background-color: #fd2306;
- box-shadow: 3px 3px 3px rgb(7, 7, 7);
- border-radius: 5px;
- cursor: pointer;
- color: #f8f9fa;
- margin-top: 10px;
+  background-color: #fd2306;
+  box-shadow: 3px 3px 3px rgb(7, 7, 7);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f8f9fa;
+  margin-top: 10px;
   margin-left: 0;  
 }
 .salidaOculta section div input{
@@ -284,7 +283,7 @@ background-color: #fd2306;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .ganaste section div h2{
-   text-align: center;
+  text-align: center;
   font-size: 50px;
   color: #27ca06;
   background-color: rgba(0, 0, 0, 0.226);
