@@ -23,7 +23,9 @@ body {
 p{
   font-family:'Times New Roman', Times, serif;
   background-color: rgba(0, 0, 0, 0.733); 
+  font-size: 30px;
 }
+
 .index h2{
   text-align: center;
   color:#fd2306 ;
@@ -70,7 +72,6 @@ p{
   margin-left: 10%;
 }
 .celda section div p{
-  font-size: 30px;
   text-align: center;
   margin-left: -15%;
 
@@ -85,26 +86,19 @@ p{
 {
   width: 10%;
   height: 35px;
- background-color: #fd2306;
- box-shadow: 3px 3px 3px rgb(7, 7, 7);
- border-radius: 5px;
- cursor: pointer;
- color: #f8f9fa;
- margin-top: 10px;
+  background-color: #fd2306;
+  box-shadow: 3px 3px 3px rgb(7, 7, 7);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f8f9fa;
+  margin-top: 10px;
   margin-left: 0;  
 }
 .celda section div form button:hover 
 {
   color: black;
- background-color: #7a0707;
- box-shadow: none;
-}
-
-footer {
-  background-color: #f8f9fa;
-  clear: both;
-  margin-top: 35%;
-  width: 15%;
+  background-color: #7a0707;
+  box-shadow: none;
 }
 
 .celda{
@@ -116,7 +110,7 @@ footer {
 .celda div h1{
   color: #f8f9fa;
 }
-.celda div p{
+.celda section div p{
   color: red;
 }
 .pasillo{
@@ -136,7 +130,6 @@ footer {
 }
 .pasillo section div p{
   color: #fd2306;
-  font-size: x-large;
   text-align: center;
 }
 .pasillo section div form input{
@@ -194,7 +187,6 @@ color: black;
 }
 .patio section div p{
   color: #fd2306;
-  font-size: x-large;
   text-align: center;
 }
 .patio section div input{
@@ -239,7 +231,6 @@ color: black;
 }
 .salida section div p, .salidaOculta section div p{
   color: #fd2306;
-  font-size: x-large;
   text-align: center;
 }
 .salidaOculta section div button{

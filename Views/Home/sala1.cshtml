@@ -4,11 +4,12 @@
 <section>
     <div>
         <p>Jugador/a @ViewBag.JugadorNombre, estás encerrado en una celda. Puedes observar una caja fuerte de 4 digitos 🔐 </p>
+        <p>Dentro de la caja fuerte se encuentra la llave que abre la puerta de la celda</p>
         <p>En la pared hay una clave extraña escrita con sangre </p>
         <p><strong>IV * III * III * V</strong></p>
         <form action='@Url.Action("Celda", "Home")' method="post">
         <input autocomplete = "off" type="text" name="claveIngresada" maxlength="4" />       
-        <button type="submit">Probar contraseña</button>
+        <button type="submit">Probar clave 🔑</button>
         </form>
 
     </div>
