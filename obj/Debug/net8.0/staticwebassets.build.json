@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SEyxurus34nxAGuujf8b8BAWrzVImdRqHux8oPFBiao=",
+  "Hash": "+n3Nv9v/sCYHTwFuZNHKCpB396QrQ67rvgtTfDI/vyQ=",
   "Source": "TP05",
   "BasePath": "_content/TP05",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\img\\ganasteImg.jpg"
     },
     {
-      "Identity": "C:\\Users\\49091985\\TP05\\wwwroot\\img\\PrisionEntrada.jpg",
+      "Identity": "C:\\Users\\49091985\\TP05\\wwwroot\\img\\PrisionEntrada.png",
       "SourceId": "TP05",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\49091985\\TP05\\wwwroot\\",
       "BasePath": "_content/TP05",
-      "RelativePath": "img/PrisionEntrada.jpg",
+      "RelativePath": "img/PrisionEntrada.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\PrisionEntrada.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\PrisionEntrada.png"
     },
     {
       "Identity": "C:\\Users\\49091985\\TP05\\wwwroot\\img\\Sala1Celda.jpg",

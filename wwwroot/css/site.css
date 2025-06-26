@@ -3,7 +3,7 @@ html {
   min-height: 100%;
 }
 .index{
-  background-image: url("/img/PrisionEntrada.jpg");
+  background-image: url("/img/PrisionEntrada.png");
   background-size: cover;        
   background-repeat: no-repeat; 
   height: 30%;
@@ -17,20 +17,20 @@ html {
 }
 
 body {
-  margin: 10px;
   padding: 10px;
 }
 p{
   font-family:'Times New Roman', Times, serif;
-  background-color: rgba(0, 0, 0, 0.733); 
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.37);
   font-size: 30px;
 }
 
 .index h2{
   text-align: center;
   color:#fd2306 ;
-  background-color: black;
-  margin-top: 4%;
+  background-color: rgba(0, 0, 0, 0.486);
+  margin-top: 16%;
 }
 .index section form label{
   margin-left: 42%;
@@ -279,14 +279,12 @@ color: black;
   color: #27ca06;
   background-color: rgba(0, 0, 0, 0.226);
 }
-.ganaste section div p{
+.ganaste section div h3{
   font-size: 35px;
   color: #91ab10;
-  background-color: rgba(0, 0, 0, 0.226);
+  text-decoration: underline;
 }
 .ganaste section div ul li{
-
   font-size: 30px;
   color: #78ad06;
-  background-color: rgba(0, 0, 0, 0.226);
 }
